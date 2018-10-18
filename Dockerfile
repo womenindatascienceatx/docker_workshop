@@ -24,6 +24,8 @@ ENV PATH=$HOME/miniconda3/envs/workshop/bin:$PATH
 
 COPY . $HOME/
 
+RUN mkdir -p $HOME/model/
+
 EXPOSE 5000
 
 CMD ["python", "app.py"]
